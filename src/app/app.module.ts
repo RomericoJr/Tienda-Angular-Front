@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -6,6 +7,7 @@ import { AppComponent } from './app.component';
 import { APIModule } from './API/api.module';
 import { AuthModule } from './Auth/auth.module';
 import { TiendaModule } from './Tienda/tienda.module';
+import { HeaderModule } from './header/header.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { TiendaModule } from './Tienda/tienda.module';
     AppRoutingModule,
     APIModule,
     AuthModule,
-    TiendaModule
+    TiendaModule,
+    HeaderModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
