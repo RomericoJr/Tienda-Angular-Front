@@ -8,6 +8,8 @@ import { APIModule } from './API/api.module';
 import { AuthModule } from './Auth/auth.module';
 import { TiendaModule } from './Tienda/tienda.module';
 import { HeaderModule } from './header/header.module';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,10 @@ import { HeaderModule } from './header/header.module';
     AuthModule,
     TiendaModule,
     HeaderModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

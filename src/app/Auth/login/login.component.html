@@ -1,1 +1,18 @@
-<p>login works!</p>
+
+
+<div class="m-5 p-2">
+  <form (submit)="login()" [formGroup]="form" >
+
+    <div class="mb-3">
+      <label for="user" class="form-label">Usuario </label>
+      <input formControlName="user" type="text" id="" class="form-control" placeholder="Usuario" >
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Contraseña </label>
+    <input formControlName="password" type="text" id="" class="form-control" placeholder="Contraseña" >
+  </div>
+
+  <button [disabled]="form.invalid" type="submit" class="btn btn-primary">Iniciar sesion</button>
+  </form>
+
+</div>
