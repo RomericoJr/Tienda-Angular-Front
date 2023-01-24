@@ -1,1 +1,41 @@
-<p>register works!</p>
+<div class="m-5 p-2">
+  <form (submit)="register()" [formGroup]="registerForm" align="center">
+
+    <div class="mb-3">
+      <label for="" class="form-label">Nombre </label>
+      <input formControlName="name" type="text" id="" class="form-control" placeholder="" >
+  </div>
+
+  <div class="row">
+    <div class=" mb-3 col">
+      <div class="mb-3">
+        <label for="" class="form-label">Apellido Paterno </label>
+        <input formControlName="apellidoP" type="text" id="" class="form-control" placeholder="" >
+    </div>
+
+    </div>
+    <div class=" mb-3 col">
+      <label for="apellidoM" class="form-label">Apellido Materno </label>
+      <input formControlName="" type="text" id="" class="form-control" placeholder="" >
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="" class="form-label">email </label>
+    <input formControlName="email" type="email" id="" class="form-control" placeholder="" >
+</div>
+
+<div class="mb-3">
+  <label for="" class="form-label">Telefono </label>
+  <input formControlName="telefono" type="number" id="" class="form-control" placeholder="" >
+</div>
+
+<div class="mb-3">
+  <label for="" class="form-label">password </label>
+  <input formControlName="password" type="text" id="" class="form-control" placeholder="" >
+</div>
+
+<button [disabled]="registerForm.invalid" type="submit" class="btn btn-primary">Registrar</button>
+
+  </form>
+</div>
